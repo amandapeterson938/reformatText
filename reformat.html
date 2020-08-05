@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-72755604-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-72755604-3');
+</script>
+    
+	<meta charset="utf-8">
+	<meta name = "description" content = "This is an example of a calculator">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+	
+	<title>Reformat</title>
+	
+	<link rel="stylesheet" href="styleSheet.css"; 
+</head>
+
+<style>
+	body
+	{
+		font-family: 'Lucida Handwriting'; 
+		text-align: center;
+		background-color: #e6ffe6
+	}
+</style>
+
+<body>
+	<div class = "titleBanner">
+	Reformat Code
+	</div>
+	<h3>Not Compatible with Internet Explorer.</h3>
+	<form>
+		<br>
+		Input: 
+		<br>
+		<textarea id = "value1" class="form-control" rows="8" cols="50"></textarea>
+		<br>
+		
+		Format:
+		<br>
+		<select id = "operator" class = "dropDownStyle" onchange="check_dd()">
+		<option value = "sqlFormat">SQL: ('word', 'word', ..., 'word')</option>	
+		<option value = "Java Array">{"word", "word", ..., "word"}</option>
+		</select>
+		<br>
+		<br>
+		
+		
+		<div id = "showMe">
+		Prefix Before In Clause
+		<br>
+		<input type = "text" class = "form-control" id = "inPrefix" name = "inPrefix" placeholder = "field_name in">
+		</div>
+	
+		
+		<button type = "button" class = "buttonStyle" onclick="calc()">Calculate</button>
+		<br>
+		<br>
+	</form>
+
+	Output:
+	<br>
+	<textarea id="outputResult" class = "form-control" rows="8" cols="50">
+	</textarea>
+	<br>
+	<button class = "buttonStyle" onclick="copy()">Copy</button>
+	
+
+	
+</body>
+
+<script src="main.js"></script>
+</html>

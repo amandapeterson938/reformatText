@@ -1,0 +1,38 @@
+
+.form-control
+{
+	width: 45vw; 
+	background: transparent; 
+	border: 1px solid gray; 
+	outline: none; 
+	border-bottom: 1.5px solid gray; 
+	color: black; 
+	font-size: 14px; 
+	margin-bottom: 2vw; 
+}
+
+.dropDownStyle
+{
+	width: 45vw; 
+	background-color: #e6ffe6
+}
+.buttonStyle
+{
+	background: #4ba663; 
+	border-color: transparent; 
+	color: #fff; 
+	font-size: 20px; 
+	font-weight: bold; 
+	letter-spacing: 2px; 
+	height: 50px; 
+	margin-top: -6px; 
+}
+
+.titleBanner
+{
+	padding: 35px; 
+	text-align: center; 
+	background: #4ba663;
+	color: white; 
+	font-size: 30px; 
+}
